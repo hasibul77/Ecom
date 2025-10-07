@@ -51,11 +51,6 @@ app.use(limiter);
 // ------------------- Routes -------------------
 app.use("/api/v1", router);
 
-// Add React Front End Routing
-app.get('*',function (req,res) {
-    res.sendFile(path.resolve(__dirname,'client','dist','index.html'))
-})
-
-
 export default app;
+
 
